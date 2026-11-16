@@ -1,16 +1,25 @@
-# React + Vite
+# Habit Tracker Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React frontend for the [Habit Tracker API](https://github.com/peikcris/habit-tracker-api).
+Sign up, log in, add habits, and check them off each day.
 
-Currently, two official plugins are available:
+## Features
+- Sign up and log in with JWT authentication
+- Add, complete, and delete habits
+- Progress summary for today
+- Session persists across page reloads
+- Loading and error states
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
+React, Vite, JavaScript, Fetch API
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting started
+1. Start the [API](https://github.com/peikcris/habit-tracker-api) on port 3000
+2. Then run:
+```bash
+git clone https://github.com/peikcris/habit-tracker-web.git
+cd habit-tracker-web
+npm install
+npm run dev
+```
+Open http://localhost:5173
