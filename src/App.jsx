@@ -26,7 +26,7 @@ export default function App() {
     return <Auth onAuth={handleAuth} />;
   }
 
-    return (
+  return (
     <div className="container">
       <div className="header">
         <h1>Habit Tracker</h1>

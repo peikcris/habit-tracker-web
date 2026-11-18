@@ -107,13 +107,18 @@ export default function Habits({ token, onLogout }) {
           <ul className="habit-list">
             {habits.map((habit) => (
               <li key={habit.id} className="habit">
-                <label className={habit.completed_today ? 'done' : ''}>
+                <label>
                   <input
                     type="checkbox"
                     checked={!!habit.completed_today}
                     onChange={() => toggle(habit)}
                   />
-                  {habit.name}
+                  <span className={habit.completed_today ? 'name done' : 'name'}>
+                    {habit.name}
+                  </span>
+                  {habit.streak > 0 && (
+                    <span className="streak">🔥 {habit.streak}</span>
+                  )}
                 </label>
                 <button
                   type="button"

@@ -57,6 +57,7 @@ button.link {
   padding: 0;
   text-decoration: underline;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -107,9 +108,17 @@ button.secondary {
   cursor: pointer;
 }
 
-.habit label.done {
+.habit .name.done {
   text-decoration: line-through;
   color: #999;
+}
+
+.streak {
+  font-size: 0.85rem;
+  background: #fff4e5;
+  color: #b45309;
+  padding: 2px 8px;
+  border-radius: 999px;
 }
 
 input[type='checkbox'] {
