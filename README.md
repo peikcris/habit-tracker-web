@@ -7,7 +7,6 @@ A full-stack habit tracker where you sign up, add daily habits, check them off, 
 
 > The demo runs on free hosting. The first request can take up to a minute while the server wakes up, and demo data may reset periodically.
 
-![Habit Tracker screenshot](screenshots/app.png)
 
 ## Features
 - Sign up and log in with JWT authentication
